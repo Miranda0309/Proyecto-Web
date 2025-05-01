@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a8800;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.home-icon {
+  cursor: pointer;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Calendar Section */
+.calendar-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  min-width: 280px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.calendar-box h2 {
+  margin-bottom: 15px;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.calendar th,
+.calendar td {
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.calendar td.selected {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Footer under calendar */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Schedule Section */
+.schedule {
+  flex: 2;
+  min-width: 600px;
+}
+
+.schedule h3 {
+  background-color: #999;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Grid for events */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  align-items: start;
+  font-size: 14px;
+}
+
+.schedule-grid > div {
+  padding: 10px;
+  text-align: center;
+}
+
+.event {
+  background-color: #b0b0b0;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule {
+    min-width: unset;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .schedule-grid {
+    min-width: 700px;
+  }
+}
