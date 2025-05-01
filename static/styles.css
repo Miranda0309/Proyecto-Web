@@ -94,4 +94,22 @@
     color: #555;
     pointer-events: none;
   }
+
+  /* Botón flotante inferior derecho */
+  .submit-btn {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    background-color: #ffffff;
+    border: 4px solid #4a90e2;
+    color: #4a90e2;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
   
