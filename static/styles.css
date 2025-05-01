@@ -34,3 +34,8 @@
   .user-name {
     font-size: 14px;
   }
+
+  /* Formulario */
+  .form-container {
+    padding: 20px;
+  }
