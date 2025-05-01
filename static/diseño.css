@@ -102,4 +102,16 @@ body {
     list-style: none;
     padding: 0;
   }
+
+  .activity-box li {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .activity-box .date {
+    display: block;
+    text-align: right;
+    color: #999;
+    font-size: 12px;
+  }
   
