@@ -66,6 +66,31 @@
         </div>
       </section>
     </main>
-  
+  <!-- Script gráfico -->
+  <script>
+    const ctx = document.getElementById('gradeChart');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          label: 'Aprobados',
+          data: [60, 75, 85, 90, 80, 70],
+          borderColor: '#90EE90',
+          fill: false
+        }, {
+          label: 'Reprobados',
+          data: [50, 65, 78, 85, 75, 60],
+          borderColor: '#FF0000',
+          fill: false
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'top' } },
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+  </script>
 </body>
 </html>
