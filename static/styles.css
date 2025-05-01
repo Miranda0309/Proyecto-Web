@@ -79,4 +79,19 @@
     font-size: 14px;
     background-color: #fdfdfd;
   }
+
+  /* Selector de fecha */
+  .date-picker {
+    position: relative;
+  }
+  
+  .calendar-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+    pointer-events: none;
+  }
   
