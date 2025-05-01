@@ -9,3 +9,13 @@
     font-family: "Segoe UI", sans-serif;
     background-color: #f8f9fa;
   }
+
+  /* Barra superior verde */
+  .topbar {
+    background-color: #2ca342;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
