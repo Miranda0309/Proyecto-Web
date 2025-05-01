@@ -3,3 +3,12 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f5f7fb;
   }
+
+  .topbar {
+    background-color: #2ca342;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
