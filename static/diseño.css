@@ -17,3 +17,9 @@ body {
   .user-section i {
     font-size: 20px;
   }
+
+  .user-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
