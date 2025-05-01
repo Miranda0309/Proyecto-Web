@@ -31,3 +31,8 @@ body {
     border-radius: 10px;
     background-color: #fff;
   }
+
+  .dashboard h2 {
+    margin-bottom: 20px;
+  }
+  
