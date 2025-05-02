@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hojas de Asistencia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <style>
+    .status-btn {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+    }
+    .present { background-color: #4CAF50; }
+    .late { background-color: #FFC107; }
+    .absent { background-color: #F44336; }
+    .total { background-color: #9E9E9E; }
+    .dropdown-menu li {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="p-4">
+    <body>
+        <nav class="bg-[#009245] flex items-center justify-between px-3 h-11">
+          <button aria-label="Menu" class="text-white text-lg">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="flex items-center space-x-4">
+            <button class="flex items-center text-white text-sm font-normal px-3 py-1 hover:bg-[#007a36] rounded">
+              <i class="fas fa-calendar-alt mr-2"></i>
+              Asistencia
+            </button>
+            <button class="flex items-center text-white text-sm font-normal px-3 py-1 hover:bg-[#007a36] rounded">
+              <i class="fas fa-user-circle text-lg"></i>
+              <span class="ml-2">Aarón Emilio</span>
+            </button>
+          </div>
+        </nav>
+      
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h4>Hojas de asistencia</h4>
+      <button class="btn btn-success">✔ Archivar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="fecha" class="form-label"><strong>Seleccionar fecha:</strong></label>
+      <input type="text" id="fecha" class="form-control" placeholder="Selecciona una fecha">
+    </div>
+
+    <p><strong>27/02/2023</strong> 14:00 - 18:00</p>
+
+    <div class="d-flex align-items-center gap-2 mb-3">
+      <button class="btn btn-warning">Pasar Presente (0)</button>
+      <span class="status-btn present">5</span> Presente
+      <span class="status-btn late">0</span> Retardo
+      <span class="status-btn absent">0</span> Ausente
+      <span class="status-btn total">6</span> Asistencia Total
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>NOMBRE</th>
+          <th>ESTADO</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Alejandro Garcia<br><small>Presente: Lun 30 Ene 2023 10:23</small></td>
+          <td>
+            <button class="btn btn-outline-success">✔</button>
+            <button class="btn btn-outline-danger ms-1">✖</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"></button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">Excluir</li>
+                <li class="dropdown-item">Marcar ausente</li>
+                <li class="dropdown-item">Retardo</li>
+                <li class="dropdown-item">Salida anticipada</li>
+                <li class="dropdown-item">Escribir un comentario</li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Carlos Martínez</td>
+            <td>
+              <button class="btn btn-outline-success">✔</button>
+              <button class="btn btn-outline-danger ms-1">✖</button>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"></button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">Excluir</li>
+                  <li class="dropdown-item">Marcar ausente</li>
+                  <li class="dropdown-item">Retardo</li>
+                  <li class="dropdown-item">Salida anticipada</li>
+                  <li class="dropdown-item">Escribir un comentario</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Carlos Martínez</td>
+          <td>
+            <button class="btn btn-outline-success">✔</button>
+            <button class="btn btn-outline-danger ms-1">✖</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"></button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">Excluir</li>
+                <li class="dropdown-item">Marcar ausente</li>
+                <li class="dropdown-item">Retardo</li>
+                <li class="dropdown-item">Salida anticipada</li>
+                <li class="dropdown-item">Escribir un comentario</li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Alejandro Garcia<br><small>Presente: Lun 30 Ene 2023 10:23</small></td>
+            <td>
+              <button class="btn btn-outline-success">✔</button>
+              <button class="btn btn-outline-danger ms-1">✖</button>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"></button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">Excluir</li>
+                  <li class="dropdown-item">Marcar ausente</li>
+                  <li class="dropdown-item">Retardo</li>
+                  <li class="dropdown-item">Salida anticipada</li>
+                  <li class="dropdown-item">Escribir un comentario</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Carlos Martínez</td>
+            <td>
+              <button class="btn btn-outline-success">✔</button>
+              <button class="btn btn-outline-danger ms-1">✖</button>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"></button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">Excluir</li>
+                  <li class="dropdown-item">Marcar ausente</li>
+                  <li class="dropdown-item">Retardo</li>
+                  <li class="dropdown-item">Salida anticipada</li>
+                  <li class="dropdown-item">Escribir un comentario</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#fecha", {
+      dateFormat: "d/m/Y",
+      defaultDate: "27/02/2023"
+    });
+  </script>
+</body>
+</html>
