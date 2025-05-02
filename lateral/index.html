@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horario Académico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <button class="menu-toggle">&#9776;</button>
+    <div class="calendar">
+      <i class="icon-calendar"></i> Calendario Académico
+    </div>
+    <div class="user-profile">
+      <i class="icon-user"></i> Aaron Cisneros
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="user-info">
+        <i class="icon-user"></i>
+        <p>Aaron Emilio<br />Quintana Cisneros</p>
+        <a href="#" class="logout">salir</a>
+        <a href="#" class="help">Ayuda</a>
+      </div>
+      <nav class="nav-menu">
+        <a href="#">Asignaturas</a>
+        <a href="#">Asignaturas por Tutoria</a>
+        <a href="#">Cursos Especiales</a>
+        <a href="#">MoPI</a>
+        <a href="#">Horario</a>
+        <a href="#">Acompañamiento Docente</a>
+        <a href="#">Marco Regulatorio</a>
+        <a href="#">Mis Prestamos</a>
+        <a href="#">Guia Estudiantil</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="home-header">
+        <i class="icon-home"></i> Home
+      </div>
+      <div class="horario-box">
+        <h2>Horario Academico</h2>
+        <p>- Programación Web<br />Grupo 1 - 10:00-11:40</p>
+        <p>- Análisis y diseño<br />Grupo 2 - 1:00-2:40</p>
+      </div>
+      <div class="progress-box">
+        <div class="progress-circle">
+          <span>50%</span>
+        </div>
+        <div class="date">
+          <span class="day">Mon Jun</span>
+          <span class="number">10</span>
+        </div>
+      </div>
+      <div class="event-list">
+        <label><input type="radio" name="evento"> REUNION</label><br />
+        <label><input type="radio" name="evento"> IMPORTANTE</label><br />
+        <label><input type="radio" name="evento"> PRUEBA DE WEB</label><br />
+        <label><input type="radio" name="evento"> CLASE DE ANALISIS</label>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
