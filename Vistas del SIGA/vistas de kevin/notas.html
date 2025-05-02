@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso de Calificaciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 16px 24px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    .btn-group {
+      margin: 12px 0;
+      display: flex;
+      gap: 12px;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #4caf50;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+
+    .container {
+      background-color: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    thead {
+      background-color: #e0f2f1;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:hover {
+      background-color: #e3f2fd;
+      cursor: pointer;
+    }
+
+    .comentario {
+      color: #c62828;
+      font-style: italic;
+    }
+
+    .active {
+      background-color: #c8e6c9 !important;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📋 Calificaciones</h1>
+  <div>👤 Kevin Mora</div>
+</header>
+
+<div class="container">
+  <h2>Asignatura</h2>
+  <p>Programación Web</p>
+
+  <div class="btn-group">
+    <button>Editar</button>
+    <button style="background-color:#ffb300;">Actualizar</button>
+    <button style="background-color:#e53935;">Eliminar</button>
+    <button style="background-color:#3949ab;">Classroom</button>
+    <button style="background-color:#6d4c41;">Adjuntar</button>
+    <button style="background-color:#00897b;">Guardar Notas</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Alumno</th>
+        <th>Calificación</th>
+        <th>Comentarios</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="seleccionarFila(this)">
+        <td>1</td>
+        <td>Carlos Mendoza</td>
+        <td>10/10</td>
+        <td></td>
+      </tr>
+      <tr onclick="seleccionarFila(this)">
+        <td>2</td>
+        <td>Alejandra Lopez</td>
+        <td>9/10</td>
+        <td></td>
+      </tr>
+      <tr onclick="seleccionarFila(this)">
+        <td>3</td>
+        <td>Maria Garcia</td>
+        <td>3/10</td>
+        <td class="comentario">Error en ejercicio 5</td>
+      </tr>
+      <tr onclick="seleccionarFila(this)">
+        <td>4</td>
+        <td>Alondra Lopez</td>
+        <td>9/10</td>
+        <td></td>
+      </tr>
+      <tr onclick="seleccionarFila(this)">
+        <td>1</td>
+        <td>Carlos Mendoza</td>
+        <td>10/10</td>
+        <td></td>
+      </tr>
+      <tr onclick="seleccionarFila(this)">
+        <td>2</td>
+        <td>Alejandra Lopez</td>
+        <td>9/10</td>
+        <td></td>
+      </tr>
+      <tr onclick="seleccionarFila(this)">
+        <td>3</td>
+        <td>Maria Garcia</td>
+        <td>3/10</td>
+        <td class="comentario">Error en ejercicio 5</td>
+      </tr>
+      <tr onclick="seleccionarFila(this)">
+        <td>4</td>
+        <td>Alondra Lopez</td>
+        <td>9/10</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function seleccionarFila(row) {
+    document.querySelectorAll('tbody tr').forEach(tr => tr.classList.remove('active'));
+    row.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
