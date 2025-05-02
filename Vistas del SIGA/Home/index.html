@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendario Académico</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <span class="material-icons menu-icon">menu</span>
+    <div class="title">
+      <span class="material-icons">calendar_today</span>
+      <span>Calendario Académico</span>
+    </div>
+    <div class="user">
+      <span class="material-icons home-icon">home</span>
+      <span class="material-icons">person</span>
+      <span>Aaron Cisneros</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="calendar-box">
+      <h2>My Calendar</h2>
+      <div class="calendar">
+        <div class="month">
+          <span class="material-icons" id="prev-month">chevron_left</span>
+          <span id="current-month">June 2024</span>
+          <span class="material-icons" id="next-month">chevron_right</span>
+        </div>
+        <table>
+          <thead>
+            <tr><th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th></tr>
+          </thead>
+          <tbody id="calendar-body">
+            <!-- Calendar days will be generated dynamically -->
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">
+        <strong>Horario</strong>
+        <div id="event-details">
+          <p>Selecciona una fecha para ver los pendientes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <h3 id="selected-date">June 26 - 2024</h3>
+      <div class="schedule-grid" id="schedule-grid">
+        <div>GMT-6</div>
+        <div>24 MON</div>
+        <div>25 TUE</div>
+        <div>26 WED</div>
+        <div>27 THU</div>
+        <div>28 FRI</div>
+        <div>29 SAT</div>
+        <div>30 SUN</div>
+
+        <div>10:00 AM</div>
+        <div class="event">Prueba de web<br>Grupo-1</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="event">Clase de Sistemas<br>Op.</div>
+        <div></div>
+        <div></div>
+
+        <div>1:00 PM</div>
+        <div></div>
+        <div></div>
+        <div class="event">Reunion Importante<br>Sala-D</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>3:00 PM</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="event">Meet<br>Online</div>
+        <div></div>
+        <div></div>
+
+        <div>4:00 PM</div>
+        <div class="event">Programar<br>clases</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>5:00 PM</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>6:00 PM</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
