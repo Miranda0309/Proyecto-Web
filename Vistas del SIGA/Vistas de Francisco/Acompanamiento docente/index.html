@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acompañamiento Docente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="menu-toggle">☰</button>
+      
+    </div>
+    <div class="header-right">
+      <button>📅 Calendario Académico</button>
+      <button>👤 User</button>
+    </div>
+  </header>
+<h1>👤 Acompañamiento Docente</h1>
+  <main>
+    <section class="filtros">
+      <label>Regímenes académicos:
+        <select id="regimen-select">
+          <option>IC-2025</option>
+          <option>IIC-2025</option>
+          <option>IIIC-2025</option>
+        </select>
+      </label>
+      <label>Cortes Parciales:
+        <select id="corte-select">
+          <option>I corte parcial</option>
+          <option>II corte parcial</option>
+        </select>
+      </label>
+      <label>Semana:
+        <select id="semana-select">
+          <option>Semana 1</option>
+          <option>Semana 2</option>
+          <option>Semana 3</option>
+          <option>Semana 4</option>
+          <option>Semana 5</option>
+          <option>Semana 6</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="tabla-docente" class="tabla">
+      <!-- Tabla dinámica generada por JS -->
+    </section>
+
+    <section id="tabla-syllabus" class="tabla">
+      <!-- Tabla syllabus generada por JS -->
+    </section>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <div id="detalle-semanas"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

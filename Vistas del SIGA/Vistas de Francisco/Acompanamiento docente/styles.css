@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2ba84a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.filtros {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.tabla {
+  margin: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.tabla table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.estado-aprobado {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.estado-pendiente {
+  background-color: #ccc;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+button.ojo-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .tabla table {
+    font-size: 0.8em;
+  }
+  .modal-content {
+    width: 95%;
+  }
+}
