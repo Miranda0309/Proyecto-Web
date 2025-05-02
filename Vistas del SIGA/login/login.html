@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login ULSA León</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #6b70704d;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(4px) brightness(0.7);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.remember {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.remember input {
+  margin-right: 0.4rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.google-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.7rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.google-btn img {
+  width: 18px;
+}
+
+.links {
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  color: #555;
+}
+
+.links a {
+  color: #00695c;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+</style>
+<body>
+  <div class="background">
+    <img src="" alt="ULSA" class="background-img" />
+  </div>
+
+  <main class="login-container">
+    <form class="login-form">
+      <img src="/Logo_ULSA2023.png" alt="Logo ULSA" class="logo" />
+
+      <h1>Sistema Integral de Gestión Académica</h1>
+
+      <label for="rol">Rol:</label>
+      <select id="rol" name="rol">
+        <option>Docente</option>
+        <option>Estudiante</option>
+        <option>Administrativo</option>
+      </select>
+
+      <input type="email" placeholder="Correo institucional" required />
+      <input type="password" placeholder="Contraseña" required />
+
+      <div class="remember">
+        <label>
+          <input type="checkbox" />
+          Recordarme
+        </label>
+      </div>
+
+      <button type="submit" class="login-btn">Iniciar sesión</button>
+
+      <button type="button" class="google-btn">
+        <img src="/gloogle.jpg" alt="Google" />
+        Login con Google
+      </button>
+
+      <div class="links">
+        <a href="#">¿Olvidaste tu contraseña?</a> ·
+        <a href="#">Solicitar soporte técnico</a> ·
+        <a href="#">Crear cuenta</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
